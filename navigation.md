@@ -3,7 +3,7 @@
 [Home]()
 
   * # SubMenu Heading 1
-  * [SubMenu Item 1](index.md)
+  * [Index](index.md)
   * [SubMenu Item 2](subitem2.md)
   - - - -
   * # SubMenu Heading 2
