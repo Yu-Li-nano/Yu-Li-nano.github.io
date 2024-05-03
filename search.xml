@@ -24,16 +24,16 @@ Tailoring energy barriers of Bloch-point-mediated transitions between topologica
       </categories>
       <tags>
         <tag>magnetic skyrmion</tag>
-        <tag>Bloch point</tag>
+        <tag>topological charge</tag>
         <tag>magnetic transition</tag>
         <tag>energy barrier</tag>
         <tag>nudged elastic band (NEB) method</tag>
         <tag>skyrmion</tag>
+        <tag>Bloch point</tag>
+        <tag>topological Hall effect</tag>
         <tag>chiral bobber</tag>
         <tag>dipole string</tag>
-        <tag>topological Hall effect</tag>
         <tag>thermal stability</tag>
-        <tag>topological charge</tag>
       </tags>
   </entry>
   <entry>
@@ -94,8 +94,8 @@ R. Chen<sup>*</sup>, <strong>Y. Li</strong>, W. Griggs, Y. Zang, V. F. Pavlidis,
         <category>Magnetic skyrmion</category>
       </categories>
       <tags>
-        <tag>2023</tag>
         <tag>magnetic multilayer</tag>
+        <tag>2023</tag>
         <tag>magnetic skyrmion</tag>
         <tag>room temperature</tag>
         <tag>interconnect</tag>
@@ -130,9 +130,9 @@ H. J. Waring, <strong>Y. Li</strong>, N. A. B. Johansson, C. Moutafis, I. J. Ver
       </categories>
       <tags>
         <tag>ferromagnetic resonances (FMR)</tag>
+        <tag>magnetisation dynamics</tag>
         <tag>NiFe</tag>
         <tag>perpendicular standing spin waves</tag>
-        <tag>magnetisation dynamics</tag>
         <tag>exchange stiffness</tag>
         <tag>2023</tag>
       </tags>
@@ -163,15 +163,15 @@ R. Chen<sup>*</sup>, <strong>Y. Li</strong>, V. F. Pavlidis, C. Moutafis<sup>*</
         <tag>magnetic multilayer</tag>
         <tag>magnetic skyrmion</tag>
         <tag>room temperature</tag>
-        <tag>magnetic transition</tag>
-        <tag>interconnect</tag>
-        <tag>energy barrier</tag>
-        <tag>nudged elastic band (NEB) method</tag>
         <tag>skyrmionium</tag>
-        <tag>skyrmion</tag>
         <tag>topological charge</tag>
+        <tag>interconnect</tag>
+        <tag>magnetic transition</tag>
+        <tag>energy barrier</tag>
         <tag>voltage controlled magnetic anisotropy (VCMA)</tag>
+        <tag>nudged elastic band (NEB) method</tag>
         <tag>2022</tag>
+        <tag>skyrmion</tag>
       </tags>
   </entry>
   <entry>
@@ -232,19 +232,19 @@ p{}
         <category>3D dynamic transition</category>
       </categories>
       <tags>
-        <tag>magnetisation dynamics</tag>
         <tag>magnetic multilayer</tag>
+        <tag>magnetisation dynamics</tag>
         <tag>2021</tag>
         <tag>Pt/Co/Ta</tag>
         <tag>magnetic skyrmion</tag>
         <tag>room temperature</tag>
+        <tag>topological charge</tag>
+        <tag>magnetic transition</tag>
+        <tag>skyrmion</tag>
         <tag>Bloch point</tag>
         <tag>emergent electromagnetic field</tag>
         <tag>terahertz</tag>
-        <tag>magnetic transition</tag>
-        <tag>skyrmion</tag>
         <tag>topological Hall effect</tag>
-        <tag>topological charge</tag>
       </tags>
   </entry>
   <entry>
@@ -269,9 +269,9 @@ H. J. Waring<sup>*</sup>, <strong>Y. Li</strong>, C. Moutafis, I. J. Vera-Marun,
       </categories>
       <tags>
         <tag>ferromagnetic resonances (FMR)</tag>
-        <tag>magnetisation dynamics</tag>
         <tag>magnetic multilayer</tag>
         <tag>RKKY</tag>
+        <tag>magnetisation dynamics</tag>
         <tag>2021</tag>
       </tags>
   </entry>
@@ -302,8 +302,8 @@ R. Chen<sup>*</sup>, <strong>Y. Li</strong>, V. F. Pavlidis, and C. Moutafis<sup
         <tag>2020</tag>
         <tag>magnetic skyrmion</tag>
         <tag>room temperature</tag>
-        <tag>interconnect</tag>
         <tag>skyrmionium</tag>
+        <tag>interconnect</tag>
         <tag>skyrmion</tag>
       </tags>
   </entry>
@@ -404,12 +404,12 @@ p{}
         <tag>2020</tag>
         <tag>magnetic skyrmion</tag>
         <tag>antiskyrmion</tag>
+        <tag>magnetic transition</tag>
+        <tag>skyrmion</tag>
         <tag>Bloch point</tag>
         <tag>emergent electromagnetic field</tag>
         <tag>terahertz</tag>
         <tag>chiral magnet</tag>
-        <tag>magnetic transition</tag>
-        <tag>skyrmion</tag>
       </tags>
   </entry>
   <entry>
@@ -491,12 +491,12 @@ p{}
         <tag>magnetic skyrmion</tag>
         <tag>2019</tag>
         <tag>antiskyrmion</tag>
+        <tag>magnetic transition</tag>
+        <tag>skyrmion</tag>
         <tag>Bloch point</tag>
         <tag>emergent electromagnetic field</tag>
         <tag>terahertz</tag>
         <tag>chiral magnet</tag>
-        <tag>magnetic transition</tag>
-        <tag>skyrmion</tag>
       </tags>
   </entry>
   <entry>
@@ -516,8 +516,8 @@ p{}
         <tag>magnetic skyrmion</tag>
         <tag>conference</tag>
         <tag>2019</tag>
-        <tag>HMM</tag>
         <tag>skyrmion</tag>
+        <tag>HMM</tag>
       </tags>
   </entry>
   <entry>
