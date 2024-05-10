@@ -419,6 +419,27 @@ R. Chen<sup>*</sup>, <strong>Y. Li</strong>, W. Griggs, Y. Zang, V. F. Pavlidis,
       </tags>
   </entry>
   <entry>
+    <title>HMM 2019 @Crete, Greece</title>
+    <url>/2019/Magnetic%20and%20spintronic%20memory/magnetic%20textures/Magnetic%20skyrmion/3D%20dynamic%20transition/20190524-HMM%202019%20@Crete,%20Greece/</url>
+    <content><![CDATA[<style></style>
+<img data-src="/images/190524_Conference-HMM2019.jpg">
+<p>Really excited to participate the 12th International Symposium on Hysteresis Modeling and Micromagnetics (<a href="http://users.math.uoc.gr/~komineas/HMM2019/index.html">HMM2019</a>) in Crete, Greece (19th-22nd May, 2019). I presented a talk in the first session “Magnetic Solitons I”, with the title “Controllable THz Bloch-point propagation in the switching process of magnetic skyrmions“. I also presented a poster from our recently published work <a href="/20181112_Switching-of-ideal-defective-skyrmion-lattices.html"><em><strong>Collective antiskyrmion-mediated phase transition and defect-induced melting in chiral magnetic films</strong></em></a>.</p>
+]]></content>
+      <categories>
+        <category>Magnetic and spintronic memory</category>
+        <category>magnetic textures</category>
+        <category>Magnetic skyrmion</category>
+        <category>3D dynamic transition</category>
+      </categories>
+      <tags>
+        <tag>magnetic skyrmion</tag>
+        <tag>conference</tag>
+        <tag>2019</tag>
+        <tag>HMM</tag>
+        <tag>skyrmion</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>THz-oscillating electric signal from Bloch point dynamics</title>
     <url>/2019/Magnetic%20and%20spintronic%20memory/magnetic%20textures/Magnetic%20skyrmion/3D%20dynamic%20transition/20191202-THz-oscillating%20electric%20signal%20from%20Bloch%20point%20dynamics/</url>
     <content><![CDATA[<p>(Abstract) Skyrmionic textures are being extensively investigated due to the occurrence of novel topological magnetic phenomena and their promising applications in a new generation of spintronic devices that take advantage of the robust topological stability of their spin structures. The development of practical devices relies on a detailed understanding of how skyrmionic structures can be formed, transferred, detected and annihilated. In this work, our considerations go beyond static skyrmions and theoretically show that the formation/annihilation of both skyrmions and antiskyrmions is enabled by the transient creation and propagation of topological singularities (magnetic monopole-like Bloch points). Critically, during the winding/unwinding of skyrmionic textures, our results predict that the Bloch-point propagation will give rise to an emergent electric field in a terahertz frequency range and with substantial amplitude. We also demonstrate ways for controlling Bloch-point dynamics, which directly enable the tuneability on both frequency and amplitude of this signal. Our studies provide a concept of directly exploiting topological singularities for terahertz skyrmion-based electronic devices.</p>
@@ -449,27 +470,6 @@ p{}
         <tag>emergent electromagnetic field</tag>
         <tag>terahertz</tag>
         <tag>chiral magnet</tag>
-        <tag>skyrmion</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HMM 2019 @Crete, Greece</title>
-    <url>/2019/Magnetic%20and%20spintronic%20memory/magnetic%20textures/Magnetic%20skyrmion/3D%20dynamic%20transition/20190524-HMM%202019%20@Crete,%20Greece/</url>
-    <content><![CDATA[<style></style>
-<img data-src="/images/190524_Conference-HMM2019.jpg">
-<p>Really excited to participate the 12th International Symposium on Hysteresis Modeling and Micromagnetics (<a href="http://users.math.uoc.gr/~komineas/HMM2019/index.html">HMM2019</a>) in Crete, Greece (19th-22nd May, 2019). I presented a talk in the first session “Magnetic Solitons I”, with the title “Controllable THz Bloch-point propagation in the switching process of magnetic skyrmions“. I also presented a poster from our recently published work <a href="/20181112_Switching-of-ideal-defective-skyrmion-lattices.html"><em><strong>Collective antiskyrmion-mediated phase transition and defect-induced melting in chiral magnetic films</strong></em></a>.</p>
-]]></content>
-      <categories>
-        <category>Magnetic and spintronic memory</category>
-        <category>magnetic textures</category>
-        <category>Magnetic skyrmion</category>
-        <category>3D dynamic transition</category>
-      </categories>
-      <tags>
-        <tag>magnetic skyrmion</tag>
-        <tag>conference</tag>
-        <tag>2019</tag>
-        <tag>HMM</tag>
         <tag>skyrmion</tag>
       </tags>
   </entry>
