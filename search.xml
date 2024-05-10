@@ -15,13 +15,13 @@
       </categories>
       <tags>
         <tag>Monte Carlo</tag>
-        <tag>electronic transport</tag>
         <tag>metal-ferroelectric-insulator-metal (MFIM)</tag>
         <tag>ferroelectric tunnel junction (FTJ)</tag>
         <tag>nonvolatile</tag>
         <tag>volatile</tag>
         <tag>inhomogeneous field model (IFM)</tag>
         <tag>design space</tag>
+        <tag>electronic transport</tag>
         <tag>performance</tag>
       </tags>
   </entry>
@@ -48,18 +48,18 @@ Tailoring energy barriers of Bloch-point-mediated transitions between topologica
         <category>Thermal stability</category>
       </categories>
       <tags>
+        <tag>electronic transport</tag>
         <tag>magnetic skyrmion</tag>
-        <tag>energy barrier</tag>
-        <tag>nudged elastic band (NEB) method</tag>
         <tag>topological charge</tag>
         <tag>magnetic transition</tag>
+        <tag>energy barrier</tag>
+        <tag>nudged elastic band (NEB) method</tag>
         <tag>skyrmion</tag>
         <tag>Bloch point</tag>
         <tag>chiral bobber</tag>
         <tag>dipole string</tag>
         <tag>topological Hall effect</tag>
         <tag>thermal stability</tag>
-        <tag>electronic transport</tag>
       </tags>
   </entry>
   <entry>
@@ -191,11 +191,11 @@ R. Chen<sup>*</sup>, <strong>Y. Li</strong>, V. F. Pavlidis, C. Moutafis<sup>*</
         <tag>room temperature</tag>
         <tag>skyrmionium</tag>
         <tag>interconnect</tag>
-        <tag>energy barrier</tag>
-        <tag>nudged elastic band (NEB) method</tag>
         <tag>topological charge</tag>
         <tag>magnetic transition</tag>
+        <tag>energy barrier</tag>
         <tag>voltage controlled magnetic anisotropy (VCMA)</tag>
+        <tag>nudged elastic band (NEB) method</tag>
         <tag>2022</tag>
         <tag>skyrmion</tag>
       </tags>
@@ -258,6 +258,7 @@ p{}
         <category>3D dynamic transition</category>
       </categories>
       <tags>
+        <tag>electronic transport</tag>
         <tag>magnetic multilayer</tag>
         <tag>magnetisation dynamics</tag>
         <tag>2021</tag>
@@ -269,7 +270,6 @@ p{}
         <tag>skyrmion</tag>
         <tag>Bloch point</tag>
         <tag>topological Hall effect</tag>
-        <tag>electronic transport</tag>
         <tag>emergent electromagnetic field</tag>
         <tag>terahertz</tag>
       </tags>
