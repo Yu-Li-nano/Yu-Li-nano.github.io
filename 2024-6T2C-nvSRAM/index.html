@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar-favicon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar-favicon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar-favicon.jpg">
+  <link rel="mask-icon" href="/images/avatar-favicon.jpg" color="#222">
+  <link rel="manifest" href="/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yu-li-nano.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="https://yu-li-nano.github.io/2024-6T2C-nvSRAM/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yu-li-nano.github.io/2024-6T2C-nvSRAM/","path":"/2024-6T2C-nvSRAM/","title":"Design space of Hafnia-FeCap-based 6T2C-nvSRAM"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Design space of Hafnia-FeCap-based 6T2C-nvSRAM | Yu Li's page</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BDBFZCKS9"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0BDBFZCKS9","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Yu Li's page</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">A postdoc @Fudan Uni, China</p>
+      <img class="custom-logo-image" src="/images/avatar.jpg" alt="Yu Li's page">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-research"><a href="/Research/" rel="section"><i class="fa fa-microscope fa-fw"></i>Research</a></li><li class="menu-item menu-item-publications"><a href="/Publications/" rel="section"><i class="fa-solid fa-book-skull fa-fw"></i>Publications</a></li><li class="menu-item menu-item-about-me"><a href="/About/" rel="section"><i class="fa fa-user fa-fw"></i>About me</a></li><li class="menu-item menu-item-tags"><a href="/Tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yu Li</p>
+  <div class="site-description" itemprop="description">A postdoc @Fudan Uni, China</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/Research/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">81</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://www.researchgate.net/profile/Yu_Li184" title="ResearchGate → https:&#x2F;&#x2F;www.researchgate.net&#x2F;profile&#x2F;Yu_Li184" rel="noopener me" target="_blank"><i class="fab fa-researchgate fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ZZz5Id8AAAAJ&hl=en" title="Google Scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user&#x3D;ZZz5Id8AAAAJ&amp;hl&#x3D;en" rel="noopener me" target="_blank"><i class="fas fa-graduation-cap fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/Yu-Li-nano" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Yu-Li-nano" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/About" title="Email → About" rel="noopener me"><i class="far fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/My_wechat" title="Wechat → My_wechat" rel="noopener me"><i class="fab fa-weixin fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+        <div class="pjax">
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://yu-li-nano.github.io/2024-6T2C-nvSRAM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yu Li">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yu Li's page">
+      <meta itemprop="description" content="A postdoc @Fudan Uni, China">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Design space of Hafnia-FeCap-based 6T2C-nvSRAM | Yu Li's page">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Design space of Hafnia-FeCap-based 6T2C-nvSRAM
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-06-11 00:00:00" itemprop="dateCreated datePublished" datetime="2024-06-11T00:00:00+08:00">2024-06-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/Research/Ferroelectric-memory/" itemprop="url" rel="index"><span itemprop="name">Ferroelectric memory</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/Research/Ferroelectric-memory/nvSRAM/" itemprop="url" rel="index"><span itemprop="name">nvSRAM</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><style></style>
+<img data-src="/images/20240611-6T2C-nvSRAM.jpg">
+<p>Power consumption has become a significant challenge for embedded edge devices, as their applications towards the Internet of Things are limited by the capacity of battery powers or energy harvesting systems. Despite performing operations at low activity frequencies, the volatile nature of SRAM results in leakage currents dominating the overall energy consumption. One of the prevalent solutions involves integrating non-volatile modules into a volatile SRAM cell, thereby creating a non-volatile SRAM (nvSRAM). Existing nvSRAM architectures typically rely on the employment of phase change memory (PCM), resistive random access memory (RRAM), or magnetic tunnel junction (MTJ), which usually require (1) additional transistors to suppress DC-short current of the non-volatile elements, (2) complex peripheral circuits and operation schemes to back up and recover the data bits regarding the memory properties, or (3) high dynamic power to operate the non-volatile units. Such scenarios can significantly increase the circuit complexity and energy consumption.</p>
+<p>Polarization switching in ferroelectric materials has been widely studied and adopted for various types of memory technologies decades ago. However, the traditional perovskite-based ferroelectrics suffered from significant issues in their CMOS compatibility and physical thickness scalability. The recent discovery of ferroelectricity in CMOS-compatible HfO<sub>2</sub>-based thin films triggered a new wave of research interest in ferroelectric memory devices, demonstrating the great potential for their integration with advanced technology nodes and mass production. To date, different nvSRAM structures with HfO<sub>2</sub>-based ferroelectric capacitors (FeCaps) and ferroelectric field-effect transistors (FeFETs) have been proposed and investigated, aiming at mitigating the above challenges faced by previous nvSRAM designs utilizing other emerging memory devices. Among them, the 6T2C nvSRAM cell, implemented by simply stacking a pair of FeCaps onto the 6T-SRAM portion, shows the simplest structure, requires the fewest extra fabrication steps, and hence, becomes one of the most intriguing options in terms of density and cost. Additionally, the more robust endurance and retention of the FeCaps, when compared with the FeFET, can ensure a longer nvSRAM lifetime for frequent data updating and storing. However, previous proof-of-concept work has only experimentally demonstrated the functionalities of the 6T2C nvSRAM based on HfO<sub>2</sub> FeCaps. Thorough evaluations of this type of devices, including their working principles and performance optimization, still await elucidation, which is critical for the further advancement of nvSRAM technologies.</p>
+<p>In this work, we first develop a device model for Hafnia-FeCap-based 6T2C nvSRAMs. By presenting the interplay between transistor and FeCap properties, we comprehensively evaluate the working principle of each operation mode within single 6T2C cells. We propose optimization strategies aimed at achieving robust and energy-efficient Recall/Store operations. Meanwhile, potential side effects on conventional SRAM operation modes that can arise from the introduction of FeCaps are also discussed. We also analyze the static power consumption and break-even time to assess the competitiveness of the approach against the sleep-mode strategy used in volatile SRAMs. The proposed strategies towards performance optimization are summarize below:</p>
+<img data-src="/images/20240611-6T2C-nvSRAM-performance.jpg" width=60%>
+<hr>
+<style> 
+p{}
+.ref p{ line-height:20px;font-size:80%;margin:0 auto;padding:0px 0} 
+</style> 
+<div class="note success"><div class="ref"> 
+<p><font size=3rem><strong>Reference</strong></font><br>
+<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/10552780">Working Principles and Performance Optimization of Nonvolatile 6T2C-SRAM With Hafnia-Based Ferroelectric Capacitors</a></p>
+<p><strong>Yu Li</strong>, Keji Zhou, Hao Jiang<sup>*</sup>, Zhangcheng Huang, Xumeng Zhang, Yingfen Wei<sup>*</sup>, and Qi Liu<br>
+<strong>IEEE Transactions on Electron Devices</strong> (2024).</p>
+</div> </div>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/nonvolatile/" rel="tag"><i class="fa fa-tag"></i> nonvolatile</a>
+              <a href="/tags/design-space/" rel="tag"><i class="fa fa-tag"></i> design space</a>
+              <a href="/tags/performance/" rel="tag"><i class="fa fa-tag"></i> performance</a>
+              <a href="/tags/nvSRAM/" rel="tag"><i class="fa fa-tag"></i> nvSRAM</a>
+              <a href="/tags/6T2C/" rel="tag"><i class="fa fa-tag"></i> 6T2C</a>
+              <a href="/tags/Ferroelectric-capacitor-FeCap/" rel="tag"><i class="fa fa-tag"></i> Ferroelectric capacitor (FeCap)</a>
+              <a href="/tags/Preisach-model/" rel="tag"><i class="fa fa-tag"></i> Preisach model</a>
+              <a href="/tags/transistor-model/" rel="tag"><i class="fa fa-tag"></i> transistor model</a>
+              <a href="/tags/SPICE/" rel="tag"><i class="fa fa-tag"></i> SPICE</a>
+              <a href="/tags/resistive-random-access-memory-RRAM/" rel="tag"><i class="fa fa-tag"></i> resistive random access memory (RRAM)</a>
+              <a href="/tags/2024/" rel="tag"><i class="fa fa-tag"></i> 2024</a>
+              <a href="/tags/CMOS-180nm-node/" rel="tag"><i class="fa fa-tag"></i> CMOS 180nm node</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024-IMW-FTJ/" rel="prev" title="Future of ferroelectric tunnel junction - nonvolatile or volatile?">
+                  <i class="fa fa-angle-left"></i> Future of ferroelectric tunnel junction - nonvolatile or volatile?
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024-VLSI/" rel="next" title="Duty-cycle induced degradation problem in Hafnia-based ferroelectric devices">
+                  Duty-cycle induced degradation problem in Hafnia-based ferroelectric devices <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yu Li</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+<script class="next-config" data-name="chatra" type="application/json">{"enable":true,"async":true,"id":null}</script>
+<script src="/js/third-party/chat/chatra.js"></script>
+<script async src="https://call.chatra.io/chatra.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
